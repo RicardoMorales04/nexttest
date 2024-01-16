@@ -1,6 +1,7 @@
 //import Head from 'next/head'
 import styles from "@/styles/styles.module.css"
 import Footer from '@/components/footer'
+import Link from "next/link"
 
 export default function Home() {
   return (
@@ -17,10 +18,10 @@ export default function Home() {
         <a href="#" className={styles.navbarBrand}>Home</a>
         <ul className={styles.navbarNav}>
           <li className={styles.navItem}>
-            <a href="#" className={styles.navLink}>Ayuda</a>
+            <Link href="/pages/test" className={styles.navLink}>Ayuda</Link>
           </li>
           <li className={styles.navItem}>
-            <a href="#" className={styles.navLink}>Sesión</a>
+            <a href="/pages/pag" className={styles.navLink}>Sesión</a>
           </li>
         </ul>
       </nav>

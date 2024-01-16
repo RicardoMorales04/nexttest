@@ -1,5 +1,5 @@
 export default function Test(){
     return <div>
-        Pagina de Prueba
+        Estas en la Pagina de Ayuda
     </div>
 }
