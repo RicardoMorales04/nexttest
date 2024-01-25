@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const Registro = ({onClose} : { onClose: () => void }) => {
     const [email,setEmail] = useState('micorreo@micorreo.com')
-    const [password,setPasword] = useState('')
+    const [password,setPassword] = useState('')
     const handleRegistro= ()=>{
         console.log(`Registro con correo: ${email} y contraseña: ${password}`);
     }
@@ -29,7 +29,7 @@ const Registro = ({onClose} : { onClose: () => void }) => {
                     value={password} 
                     onChange={(e)=>{
                     e.preventDefault
-                    setPasword(e.target.value)
+                    setPassword(e.target.value)
                 }}/>
                 <button onClick={handleRegistro}>Registrar</button>
                 <p>¿Ya tienes cuenta? <Link href="/pages/login">Inicia Sesión</Link></p>
