@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useState } from "react";
 /*import formStyles from "@/styles/formStyles.module.css"*/
 
-    const Login = ({ onClose }: { onClose: () => void }) => {
+    const Login = ({ onClose }:any) => {
         const [email, setEmail] = useState('micorreo@micorreo.com');
         const [password, setPassword] = useState('');
 
