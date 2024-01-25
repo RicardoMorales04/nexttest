@@ -2,13 +2,13 @@ import Link from "next/link";
 import { useState } from "react";
 /*import formStyles from "@/styles/formStyles.module.css"*/
 
-const Login = ({onClose}) => {
-    const [email, setEmail] = useState('micorreo@micorreo.com');
-    const [password, setPasword] = useState('');
+    const Login = ({ onClose }: { onClose: () => void }) => {
+        const [email, setEmail] = useState('micorreo@micorreo.com');
+        const [password, setPassword] = useState('');
 
-    const handleLogin = () => {
-        console.log(`Login con correo: ${email} y contraseña: ${password}`);
-    }
+        const handleLogin = () => {
+            console.log(`Login con correo: ${email} y contraseña: ${password}`);
+        }
 
     return (
         <div /*className={formStyles.modal}*/>
@@ -31,7 +31,7 @@ const Login = ({onClose}) => {
                     value={password}
                     onChange={(e) => {
                         e.preventDefault(); // Invoca la función preventDefault
-                        setPasword(e.target.value);
+                        setPassword(e.target.value);
                     }}
                 />
                 <button onClick={handleLogin}>Iniciar Sesión</button>
@@ -40,6 +40,6 @@ const Login = ({onClose}) => {
             </div>
         </div>
     );
-}
+};
 
 export default Login;
